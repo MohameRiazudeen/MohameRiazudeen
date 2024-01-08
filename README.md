@@ -1,6 +1,12 @@
-
-<p>I learn electronic (B Tech) and am interesting in language programmation.<p>
-<p>I worked in the <span style="color:green">RATP</span> group for 2 month on repairing electronic card</p>
+<p>
+Some Svg Animation stuff done :
+  - rotating
+  - 3d perspective
+  - sliding
+  - path animate
+  - keyframes setting
+  - etc.
+</p>
 
 <!---
 MohameRiazudeen/MohameRiazudeen is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
