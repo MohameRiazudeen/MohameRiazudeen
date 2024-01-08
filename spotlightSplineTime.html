@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body{ background-color: black}
+</style>
+<title></title>
+</head>
+<body>
+
+
+<svg
+  viewBox="0 0 420 420"
+  xmlns="http://www.w3.org/2000/svg">
+  <filter id="filter">
+    <feSpecularLighting in="SourceGraphic"lighting-color="white" result="diffuseLighting">
+      <feSpotLight x="100" y="100" z="300"
+pointsAtX="150"  pointsAtY="190" pointsAtZ="0" limitingConeAngle="12">
+<animate
+attributeName="pointsAtY"
+from="100"
+to="200"
+begin="3s"
+dur="10s"
+/>
+<animate
+attributeName="pointsAtX"
+values="50;300"
+calcMode="spline"
+keySplines="1 0 0 1"
+begin="3s"
+dur="10s"
+fill="freeze"/>
+<animate
+attributeName="pointsAtX"
+from="300"
+to="50"
+begin="15s"
+dur="5s"
+/>
+      <feSpotLight/>
+    </feSpecularLighting>
+    <feComposite
+      in="SourceGraphic"
+      in2="diffuseLighting"
+      operator="arithmetic"
+      k1="1"
+      k2="0"
+      k3="0"
+      k4="0" 
+      result="composite"/>
+  </filter>
+  <image  x="0" y="0" width ="400" height="400"xlink:href="Images/Vitrine.jpg"filter="url(#filter)">
+<!--  <circle  cx="110" cy="110" r="100" filter="url(#filter)" />-->
+</svg>

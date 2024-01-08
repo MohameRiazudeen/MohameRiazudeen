@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+html{ background-color: green;}
+div{
+box-shadow:10px 10px 10px black}
+.d{
+	animation-name: ror2;
+	left:20px;
+	top:20px;
+	background-color:red ;
+	}
+.a{
+	background-color:yellow ;
+	animation-name: ror3;
+	bottom:20px;	
+}
+.b, .c,.a,.d{
+	box-shadow :10px10px grey;
+	border-radius:50%;
+	border:2px solid black;
+	opacity:.8;
+	animation-duration: 10s;
+	animation-iteration-count: indefinite;
+	animation-direction: linear;
+	position:absolute;
+	width :100px ;
+	height:100px;
+}
+.b{
+	animation-name: ror1;
+	bottom:20px;
+	right:20px;
+	background-color:blue ;
+}
+
+.c{	
+animation-name: ror;
+right:20px;
+top:20px;
+background-color:purple ;	
+}
+@keyframes ror3{
+	from{}
+	50%{
+	transform: scale(1.5,1) translate(150px,-300px)
+	}
+	to{	transform: translateY(300px)}
+}
+@keyframes ror2{
+	from{}
+	50%{
+		transform:scale(1,1.5) translate(150px,300px)
+	}
+	to{	transform: translateY(-300px)}
+}
+@keyframes ror1{
+	from{}
+	50%{
+		transform: scale(1,1)translate(-150px,-300px)
+	}
+	to{	transform: translateY(300px)}
+}
+@keyframes ror{
+	from{}
+	50%{
+		transform: scale(1.5,1.5)translate(-150px,300px)
+	}
+	to{	transform: translateY(-300px)}
+}
+</style>
+<title></title>
+</head>
+<body>
+<div class="d"></div>
+<div class="a"></div>
+<div class="b"></div>
+<div class="c"></div>
+</body>
+</html>

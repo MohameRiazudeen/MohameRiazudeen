@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+path{stroke-width:5px}
+.draw{stroke-dashoffset:100;stroke-dasharray:100;animation:animate 5s forwards;stroke:black;fill:transparent}
+body{margin:0px;padding:0; background-color:orange}
+svg{
+transform:scale(2,2) translate(50px,50px);
+position:absolute}
+@keyframes animate{
+to{
+stroke-dashoffset:0
+}
+}
+</style>
+<title></title>
+</head>
+<body>
+<svg>
+<path class="draw" d="M150 20 A20 40 0 0 1 170 10 A20 40 0 0 1 190 10 A20 40 0 0 1 170 20 A20 40 0 0 1 150 20">
+<!--<animateTransform 
+attributeName="transform"
+attributeType="translate"
+from="-100 20"
+to="150 20"
+dur="10s"
+repeatCount="1"/>
+-->
+<animateTransform 
+attributeName="transform"
+attributeType="rotate"
+from="0 "
+to="-90"
+dur="10s"
+repeatCount="1"/>
+</path>
+</svg>
+</body>
+</html>

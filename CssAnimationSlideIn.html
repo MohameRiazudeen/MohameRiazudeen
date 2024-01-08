@@ -1,0 +1,39 @@
+<!doctype html> 
+<html>
+<head>
+<title>SlideIn Animation</title>
+<style type="text/css">
+ body{
+ background-color: #FF00FF
+ }
+ p {
+  font-size:25px;
+  animation-duration: 7s;
+  animation-name: slidein;
+  animation-iteration-count:2;
+  animation-direction:alternate;
+  } 
+  @keyframes slidein {
+  from {
+  margin-left: 100%;
+  width: 300%;
+  }
+  75% {
+  font-size: 300%;
+  margin-left: 25%;
+  width: 150%;
+  }
+  to {
+  margin-left: 0%;
+  width: 100%;
+  }
+  }
+</style>
+</head>
+<body>
+<h1>SlideIn Animation</h1>
+<p>
+ This is a slide show with CSS animation. We can play with margin and font-size property.
+</p>
+</body> 
+</html>

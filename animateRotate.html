@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				background-image:url("Sunset.jpeg");}
+			.main{
+				display:flex;
+				justify-content:center;
+				align-item:center;
+				margin-top:100px;
+				text-align:center;
+				line-height:50px;
+			}
+			.main1{
+				display:flex;
+				justify-content:center;
+				align-item:center;
+				margin-top:100px;
+				text-align:center;		
+
+				font-weight:bolder;
+				line-height:50px;
+			}
+			
+			.load{								
+				height:50px;
+				width:50px;
+				background:blue;
+				color:white;
+				border-radius:20%;
+				margin:2px;
+				font-weight:bolder;
+				animation: animate 3s alternate infinite;
+			}
+			@keyframes animate{
+					0%{
+						transform:rotateX(0deg);
+					}		
+					50%{
+						transform:rotateX(360deg);
+					}		
+					100%{
+						transform:rotateX(0deg);
+					}		
+			}	
+			.load:nth-child(1){
+				animation-delay: .2s;
+			}
+			.load:nth-child(2){
+				animation-delay: .4s;
+			}
+			.load:nth-child(3){
+				animation-delay: .6s;
+			}
+			.load:nth-child(4){
+				animation-delay: .8s;
+			}
+			.load:nth-child(5){
+				animation-delay: 1s;
+			}
+			.load:nth-child(6){
+				animation-delay: 1.2s;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<div class="main1">WELCOME TO</div>
+		<div class="main">
+			<div class="load">T</div>
+			<div class="load">R</div>
+			<div class="load">I</div>
+			<div class="load">K</div>
+			<div class="load">K</div>
+			<div class="load">E</div>
+			<div class="load">E</div>	
+		</div>
+	</body>
+</html>

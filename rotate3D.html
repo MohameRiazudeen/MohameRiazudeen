@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+h1{text-align : center; color:white}
+body{background : linear-gradient(90deg, blue,orange,violet )}
+img {
+width: 300px;height:200px; position:absolute}
+
+.container{width: 350px; height : 200px;margin-top: 15%;margin-left:40% ;
+transform-style:preserve-3d; transform: rotateX(-10deg) rotateZ(-10deg);
+animation-duration: 20s;
+animation-name: ror;
+animation-iteration-count: indefinite;
+animation-direction: linear;
+  
+}
+
+@keyframes ror{50%{transform : rotateX(30deg)}
+80%{transform : rotateX(-30deg)}
+}
+
+.image{animation : rotate 20s linear indefinite;transform-style:preserve-3d;width : 100% ;position : absolute;
+animation-duration: 20s;
+animation-name: rotate;
+animation-iteration-count: indefinite;
+animation-direction: linear; 
+}
+
+@keyframes rotate{
+from{}
+to{transform : rotateY(360deg)}
+}
+
+img:nth-child(1){ transform : rotateY(60deg) translateZ(300px)}
+img:nth-child(2){ transform : rotateY(120deg) translateZ(300px)}
+img:nth-child(3){ transform : rotateY(180deg) translateZ(300px)}
+img:nth-child(4){ transform : rotateY(240deg) translateZ(300px)}
+img:nth-child(5){ transform : rotateY(300deg) translateZ(300px)}
+img:nth-child(6){ transform : rotateY(360deg) translateZ(300px)}
+
+</style>
+</head>
+<body>
+<h1>TYPE OF WORK IN A TEMP AGENCY</h1>
+	<div class="container">
+		<div class="image">
+			<img src="Images/Vitrine.jpg">
+			<img src="Images/Disney.jpg">
+			<img src="Images/BoxLetter.jpg">
+			<img src="Images/FrozenBox.jpg">
+			<img src="Images/Flyer.jpg">
+			<img src="Images/Disney1.jpg">
+		</div>
+	</div>
+</body>
+</html>

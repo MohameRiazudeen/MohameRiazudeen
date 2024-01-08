@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body{
+background-color: #5500aa
+}
+svg{width:120;height:120;border:blue 2px solid}
+</style>
+<title></title>
+</head>
+<body>
+<svg>
+
+<svg>
+<rect x="10 " y="60" width="10"height="10" fill="red" >
+</rect>
+<rect x="110 " y="60" width="10"height="10" fill="red" ></rect>
+<rect x="60 " y="10" width="10"height="10" fill="red" ></rect>
+<rect x="60 " y="110" width="10"height="10" fill="red" ></rect>
+  <circle cx="60" cy="10" r="10">
+
+    <animate
+      attributeName="cx"
+      dur="8s"
+      repeatCount="indefinite"
+      values="60; 110; 60; 10; 60"
+      keyTimes="0; 0.25; 0.5; 0.75; 1" />
+    <animate
+      attributeName="cy"
+      dur="8s"
+      repeatCount="indefinite"
+      values="10; 60; 110; 60; 10"
+      keyTimes="0; 0.25; 0.5; 0.75; 1" />
+  </circle>
+</svg>
+
+</svg>
+</body>
+</html>

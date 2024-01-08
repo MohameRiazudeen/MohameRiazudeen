@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+text{font-size:20;font-weight:10;x:60;y:60;stroke:red}
+.center{r:3;fill:red;cx:100;cy:100}
+circle{opacity:.6;r:100; stroke:red;cx:100;cy:100}
+svg{opacity:1;background-size:800px 350px;background-image:url('Images/Disney.jpg');border:solid red;
+width:800;
+height:400;}
+#red{stroke:red;}
+line{stroke:orange;}
+</style>
+<title></title>
+</head>
+<body >
+<svg transform="scale(1.4,1) translate(100,0)" width="800" height="350">
+<circle >
+<animate 
+attributeName="cx"
+from="-100"
+to="100"
+begin="0s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+<animate
+attributeName="r"
+from="0"
+to="100"
+begin="0s"
+dur="4s"
+repeatCount="1" />
+<set
+attributeName="fill"
+to="blue"
+begin="4s"
+repeatCount="1"
+fill="freeze" />
+</circle>
+<circle class="center">
+
+<animate
+attributeName="cy"
+from="800"
+to="100"
+begin="0s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+<animate
+attributeName="r"
+from="100"
+to="3"
+begin="0s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</circle>
+
+<line stroke-width="2"  x1="100" y1="100"x2="200" y2="100">
+<animate
+attributeName="x1"
+from="200"
+to="100"
+begin="0s"
+dur="4s"
+repeatCount="1" />
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0 100 100"
+to="-30 100 100"
+begin="4s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</line>
+<line stroke-width="2"  x1="200" y1="100"x2="200" y2="100">
+<animate
+attributeName="x1"
+from="200"
+to="100"
+begin="8s"
+dur="2s"
+repeatCount="1"
+fill="freeze"/>
+</line>
+<text stroke="yellow"x="140" y="120">R 
+<animate
+attributeName="y"
+from="-100"
+to="120"
+begin="0s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/></text>
+<text stroke="yellow"x="200" y="80">delta R
+<animate
+attributeName="y"
+from="-100"
+to="80"
+begin="0s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</text>
+<line stroke-width="5"  x1="200" y1="100"x2="200" y2="100">
+<animate
+attributeName="y2"
+from="100"
+to="50"
+begin="12s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0 100 100 "
+to="-30 100 100"
+begin="16s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+
+</line>
+<line stroke-width="5"  x1="200" y1="100"x2="200" y2="100">
+<animate
+attributeName="y2"
+from="100"
+to="50"
+begin="20s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+<animateTransform 
+attributeName="transform"
+type="translate"
+from="0"
+to="-10 -48"
+begin="26s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</line>
+<text font-size="20"stroke="orange"x="150" y="-100">Vt
+<animate
+attributeName="y"
+from="-100"
+to="40"
+begin="20s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</text>
+<line stroke-width="3" x1=" 190" y1="5 " x2="190 " y2="5">
+<animate
+attributeName="x1"
+from="190"
+to="160"
+begin="30s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</line> 
+<text x="900" y="15">delta Vt
+<animate
+attributeName="x"
+from="900"
+to="200"
+begin="20s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</text>
+<text x="120 " y="- 100">b
+<animate
+attributeName="y"
+from="-100"
+to="100"
+begin="30s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</text>
+<text  x="180" y="-100">b
+<animate 
+attributeName="y"
+from="-100"
+to="40"
+begin="20s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</text>
+<line stroke-width="3" x1="190" y1="52" x2="200" y2="52">
+<animate 
+attributeName="y2"
+from="52"
+to="100"
+begin="24s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</line>
+<text x="300" y="400">Similar Triangles Vt / R = a / Vt
+<animate
+attributeName="y"
+from="400"
+to="100"
+begin="10s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</text>
+<text  x="300" y="-50">delta R (vectors positions) = Vt and delta Vt (vectors velocities) = Ac
+<animate
+attributeName="y"
+from="-50"
+to="80"
+begin="10s"
+dur="4s"
+fill="freeze"/>
+</text>
+<text x="300" y="400">Centripetal Acceleration , Ac = V² / R; delta = derivative calculus
+<animate
+attributeName="y"
+from="400"
+to="120"
+begin="12s"
+dur="4s"
+repeatCount="1"
+fill="freeze"/>
+</text>
+<image opacity=".6" x="50 " y="200" xlink:href="Images/Vitrine.jpg" height="100" width="100" >
+<animate
+attributeName="x"
+from="-10"
+to="700"
+begin="1s"
+dur="10s"
+repeatCount="1"
+fill="freeze"/>
+</image>
+<image x="550 " y="150 " xlink:href="Images/Vitrine.jpg" height="50" width="50" >
+<animateTransform
+type="translate"
+attributeName="transform"
+from="0 0"
+to=" -80 -10"
+begin="0s"
+dur="10s"
+repeatCount="1"
+fill="freeze"/>
+</image>
+</svg>
+</body>
+</html>

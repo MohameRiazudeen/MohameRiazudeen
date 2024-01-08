@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+svg{
+width: 100%;
+border:solid 2px white;
+height:200px;
+}
+path{fill:transparent}
+rect,path,table,tr,td{
+stroke-width:3;
+stroke:white;
+
+animation:setoff;
+animation-duration: 15s;
+animation-delay:5s;
+animation-iteration-count: 1;
+animation-direction:forwards;
+animation-fill-mode:both;
+}
+@keyframes setoff{
+30%{border: solid 2px #fd8000;stroke:#fd8000}
+60%{border:purple solid 2px;stroke:purple}
+100%{border:2px solid red;stroke:red}
+
+}
+rect{
+width: 30px;
+height:70px;
+fill:transparent
+}
+line,text{
+stroke-width:2;
+stroke:white}
+circle{
+stroke-width:2;
+stroke:red;
+r:20;
+fill:transparent
+
+}
+body{
+color:white;
+background-color: black
+}
+table,tr,td{border:2px white solid}
+</style>
+<title></title>
+</head>
+<body>
+<svg>
+<text x="120 " y="-0">y</text>
+<use href="#arr">
+  <animateMotion
+  path="M-30,0 H80"
+  dur="2s"
+  repeatCount="indefinite"
+  rotate="auto" />
+</use>
+<!--<path stroke="red" d="M160,20 V150"/>-->
+<g id ="trans">
+<use href="#arr">
+  <animateMotion
+  path="M180,-40 V80"
+  dur="2s"
+  repeatCount="indefinite"
+  rotate="auto" />
+</use>
+</g>
+<!--<use transform="translate(-130)"href="#trans"></use>-->
+<use transform="translate(100)"href="#trans"></use>
+<use transform="translate(50)"href="#trans"></use>
+<defs>
+<line id="lin" x="30 " y=" 20" />
+<circle id="circ"/>
+<rect id="rect"/>
+<path id="arr" d="M60,10 70,20 60,30"/>
+<path id="pat"d="M460,20 V50"/>
+</defs>
+<use href="#arr"></use>
+<use href="#trans" transform=" translate(70 150) rotate(180 60 10)"></use>
+<use href="#trans" transform=" rotate(90 60 10) translate(40 -110)"></use>
+<use href="#arr" transform=" translate(0 150) rotate(180 60 10)"></use>
+<use href="#arr" transform=" translate(210 20) rotate(90 60 10)"></use>
+<use href="#arr" transform=" translate(110 20) rotate(90 60 10)"></use>
+<use href="#arr" transform=" translate(160 20) rotate(90 60 10)"></use>
+<text x="60 " y="50">I</text>
+<text x="170 " y="50">I1</text>
+<text x="220 " y="50">I2</text>
+<text x="270 " y="50">I3</text>
+
+
+<g id="anim1">
+<text x="-290 " y="80">U</text>
+<use href="#circ" x="-270 " y="100"/>
+<line x2="-270 " y2="20" x1="000 " y1="20 "/>
+<line x2="-270 " y2="150" x1="000 " y1="150 "/>
+<line x2="-270 " y2="20" x1="-270 " y1="150 "/>
+</g>
+<use href="#anim1">
+<animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      from="-100"
+      to="300"
+      dur="5s"
+      repeatCount="1"
+      fill="freeze" />
+</use>
+
+<g id="anim" >
+
+<text x="500 " y="100">R3</text>
+<text x="550 " y="100">R2</text>
+<text x="450 " y="100">R1</text>
+<use href="#rect" x="450 " y="50"/>
+<use href="#rect" x="500 " y="50"/>
+<use href="#rect" x="550 " y="50"/>
+<use href="#pat"/>
+<use href="#pat" transform="translate(50)"/>
+<use href="#pat" transform="translate(100)"/>
+<use href="#pat" transform="translate(0,100)"/>
+<use href="#pat" transform="translate(50,100)"/>
+<use href="#pat" transform="translate(100,100)"/>
+</g>
+
+<use href="#anim" stroke="white">
+<animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      from="200"
+      to="-300"
+      dur="5s"
+      repeatCount="1"
+      fill="freeze" />
+</use>
+</svg>
+<p>	Given Values<br>
+Admitence is inverse of resistance<br>
+1/R1+1/R2+1/R3=(R1R2+R2R3+R1R3)/(R2R1R3)<br>
+Voltage and Intensity in respect of Ohm's Law U=RI
+</p>
+<table style="background-color:none">
+<thead>
+<tr>
+<th>U</th>
+<th>I</th>
+<th>I1</th>
+<th>I2</th>
+<th>I3</th>
+<th>R1</th>
+<th>R2</th>
+<th>R3</th>
+<th>Req</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 Volts</td>
+<td>0.02 Ampere</td>
+<td>0.01 A</td>
+<td>0.005 A</td>
+<td>0.003 A</td>
+<td>1000 Ohms</td>
+<td>2000 Ohms</td>
+<td>3000 Ohms</td>
+<td>500 Ohms</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
